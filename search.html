@@ -8,7 +8,7 @@
   </head>
   <body>
     <ul class="topnav">
-      <li><a class="active" href="index.html">Home</a></li>
+      <li><a class="active" href="login.html">Home</a></li>
       <li><a href="add.html">Add ducks</a></li>        
       <li><a href="search.html">Search ducks</a></li>
       <li><a href="pond.html">Pond</a></li>
@@ -31,7 +31,7 @@
       let ducks = [];
 
       async function getAll() {
-        let host = "http://localhost:8080";
+        let host = "https://ducks-service-latest-kbkw.onrender.com";
         return fetch(host + "/ducks")
           .then((response) => response.json())
           .catch((error) => {
